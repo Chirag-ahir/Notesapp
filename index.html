@@ -116,7 +116,7 @@
         const notesText = document.querySelectorAll('textarea')  
         const notes = []  
         notesText.forEach(note => notes.push(note.value))  
-        localStorage.setItem('notes', JSON.stringify(notes))  
+        globalStorage.setItem('notes', JSON.stringify(notes))  
         }  
    </script>
   </body>  
